@@ -518,6 +518,8 @@ BdsFormalizeConsoleVariable (
   UINTN                     VariableSize;
   EFI_STATUS                Status;
 
+  VariableSize = 0;
+
   GetEfiGlobalVariable2 (VariableName, (VOID **)&DevicePath, &VariableSize);
   if ((DevicePath != NULL) && !IsDevicePathValid (DevicePath, VariableSize)) {
     Status = gRT->SetVariable (

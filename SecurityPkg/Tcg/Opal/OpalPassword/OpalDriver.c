@@ -2184,6 +2184,7 @@ ProcessOpalRequest (
 
   DEBUG ((DEBUG_INFO, "%a() - enter\n", __FUNCTION__));
 
+  VariableSize = 0;
   if (mOpalRequestVariable == NULL) {
     Status = GetVariable2 (
                OPAL_REQUEST_VARIABLE_NAME,

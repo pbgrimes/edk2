@@ -10,7 +10,7 @@
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
   @par Specification Reference:
-  AMD64 Architecture Programming Manual volume 2, March 2017, Sections 15.34
+  AMD64 Architecture Programming Manual volume 2, March 2024
 
 **/
 
@@ -18,7 +18,14 @@
 #define __AMD_MSR_H__
 
 #include <Register/Intel/ArchitecturalMsr.h>
-#include <Register/Amd/Fam17Msr.h>
+#include <Register/Amd/SevSnpMsr.h>
 #include <Register/Amd/SvsmMsr.h>
+
+#define MSR_CPUID_NAME_STRING0      0xC0010030ul    // First CPUID namestring register
+#define MSR_CPUID_NAME_STRING1      0xC0010031ul
+#define MSR_CPUID_NAME_STRING2      0XC0010032ul
+#define MSR_CPUID_NAME_STRING3      0xC0010033ul
+#define MSR_CPUID_NAME_STRING4      0xC0010034ul
+#define MSR_CPUID_NAME_STRING5      0xC0010035ul    // Last CPUID namestring register
 
 #endif

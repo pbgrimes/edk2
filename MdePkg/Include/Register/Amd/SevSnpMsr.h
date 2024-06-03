@@ -151,3 +151,4 @@ typedef union {
 } MSR_SEV_STATUS_REGISTER;
 
 #endif
+

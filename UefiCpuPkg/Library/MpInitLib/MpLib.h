@@ -35,7 +35,7 @@
 #include <Library/MicrocodeLib.h>
 #include <ConfidentialComputingGuestAttr.h>
 
-#include <Register/Amd/Fam17Msr.h>
+#include <Register/Amd/SevSnpMsr.h>
 #include <Register/Amd/Ghcb.h>
 
 #include <Guid/MicrocodePatchHob.h>

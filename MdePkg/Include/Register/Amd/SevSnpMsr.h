@@ -14,8 +14,8 @@
 
 **/
 
-#ifndef __FAM17_MSR_H__
-#define __FAM17_MSR_H__
+#ifndef SEV_SNP_MSR_H_
+#define SEV_SNP_MSR_H_
 
 /**
   Secure Encrypted Virtualization - Encrypted State (SEV-ES) GHCB register
